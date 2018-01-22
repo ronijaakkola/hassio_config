@@ -40,6 +40,8 @@ known_devices.yaml
 *.txt
 *.db
 *.db-journal
+*.db-shm
+*.db-wal
 *.conf
 *.sqlite
 *.log
