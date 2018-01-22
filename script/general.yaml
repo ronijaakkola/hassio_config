@@ -1,0 +1,4 @@
+away_24:
+  sequence:
+  - delay:
+      hours: 23
