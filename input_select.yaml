@@ -1,0 +1,10 @@
+radio:
+  name: Radio
+  options:
+   - P3
+   - P1
+   - P2
+   - Alltid Nyheter
+   - Av
+  initial: Av
+  icon: mdi:music-note
