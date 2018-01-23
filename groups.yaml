@@ -1,0 +1,17 @@
+default_view:
+    view: yes
+    icon: mdi:home
+    entities:
+        - group.livingroom
+        - group.bedroom
+        - media_player.romacast_makuuhuone
+    
+livingroom:
+    name: Olohuone
+    entities:
+        - light.olohuone
+        
+bedroom:
+    name: Makuuhuone
+    entities:
+        - light.makuuhuone
