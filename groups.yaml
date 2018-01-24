@@ -5,6 +5,13 @@ default_view:
         - group.livingroom
         - group.bedroom
         - media_player.romacast_makuuhuone
+
+automation:
+    name: Automaatio
+    view: yes
+    icon: mdi:robot
+    entities:
+        - group.automation_settings
     
 livingroom:
     name: Olohuone
@@ -15,3 +22,9 @@ bedroom:
     name: Makuuhuone
     entities:
         - light.makuuhuone_jalkalamppu
+
+automation_settings:
+    name: Automaatioasetukset
+    entities:
+        - input_boolean.light_automation
+    
