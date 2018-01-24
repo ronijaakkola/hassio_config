@@ -1,2 +1,12 @@
-door:
+guest_mode:
+  name: Vierastila
+  icon: mdi:account-multiple
   initial: off
+
+light_automation:
+  name: Automaattinen valaistus
+  icon: mdi:lightbulb-outline
+  initial: on
+
+light_interior:
+  name: Valot sisätilat

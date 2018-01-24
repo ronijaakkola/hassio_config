@@ -3,6 +3,10 @@
     platform: state
     entity_id: media_player.romacast_makuuhuone
     to: 'playing'
+  condition:
+    - condition: state
+      entity_id: input_boolean.light_automation
+      state: 'on'
   action:
     - service: scene.turn_on
       entity_id: scene.bedroom_media
@@ -12,6 +16,10 @@
     platform: state
     entity_id: media_player.romacast_makuuhuone
     to: 'off'
+  condition:
+    - condition: state
+      entity_id: input_boolean.light_automation
+      state: 'on'
   action:
     - service: scene.turn_on
       entity_id: scene.bedroom_comfy
