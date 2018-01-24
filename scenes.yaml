@@ -1,0 +1,23 @@
+- name: Bedroom Full
+  entities:
+    light.makuuhuone_jalkalamppu:
+      state: on
+      brightness_pct: 100
+      color_temp: 305
+      transition: 3
+
+- name: Bedroom Comfy
+  entities:
+    light.makuuhuone_jalkalamppu:
+      state: on
+      brightness_pct: 45
+      color_temp: 305
+      transition: 3
+
+- name: Bedroom Media
+  entities:
+    light.makuuhuone_jalkalamppu:
+      state: on
+      brightness_pct: 5
+      color_temp: 372
+      transition: 3

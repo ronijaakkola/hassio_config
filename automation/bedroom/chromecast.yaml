@@ -1,0 +1,17 @@
+- alias: "Chromecast started playing"
+  trigger:
+    platform: state
+    entity_id: media_player.romacast_makuuhuone
+    to: 'playing'
+  action:
+    - service: scene.turn_on
+      entity_id: scene.bedroom_media
+
+- alias: "Chromecast stopped playing"
+  trigger:
+    platform: state
+    entity_id: media_player.romacast_makuuhuone
+    to: 'off'
+  action:
+    - service: scene.turn_on
+      entity_id: scene.bedroom_comfy

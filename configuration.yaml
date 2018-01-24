@@ -37,14 +37,9 @@ history:
 # View all events in a logbook
 logbook:
 
-# Enables a map showing the location of tracked devices
-map:
-
-# Cloud
-cloud:
-
 group: !include groups.yaml
 automation: !include_dir_merge_list automation
 script: !include_dir_merge_list script
 input_boolean: !include input_boolean.yaml
 input_select: !include input_select.yaml
+scene: !include scenes.yaml
