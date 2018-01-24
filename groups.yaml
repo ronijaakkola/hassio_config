@@ -9,9 +9,9 @@ default_view:
 livingroom:
     name: Olohuone
     entities:
-        - light.olohuone
+        - light.olohuone_jalkalamppu
         
 bedroom:
     name: Makuuhuone
     entities:
-        - light.makuuhuone
+        - light.makuuhuone_jalkalamppu
