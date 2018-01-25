@@ -1,0 +1,21 @@
+- alias: Home Assistant Startup
+  hide_entity: True
+  trigger:
+    platform: homeassistant
+    event: start
+  action:
+    service: notify.telegram
+    data:
+      title: '*Käynnistys*'
+      message: 'Beep, boop! Olen taas käytettävissänne!'
+
+- alias: Home Assistant Update Available
+  hide_entity: True
+  trigger:
+    platform: state
+    entity_id: updater.updater
+  action:
+    service: notify.telegram
+    data:
+      title: '*Päivitys saatavilla*'
+      message: 'Anteeksi, mutta sisuskaluni voitaisiin päivittää versioon {{ states.updater.updater.state }}.'
