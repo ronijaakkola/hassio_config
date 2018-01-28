@@ -7,6 +7,9 @@
     - condition: state
       entity_id: input_boolean.light_automation
       state: 'on'
+    - condition: state
+      entity_id: light.makuuhuone_jalkalamppu
+      state: 'on'
   action:
     - service: scene.turn_on
       entity_id: scene.bedroom_media
@@ -19,6 +22,9 @@
   condition:
     - condition: state
       entity_id: input_boolean.light_automation
+      state: 'on'
+    - condition: state
+      entity_id: light.makuuhuone_jalkalamppu
       state: 'on'
   action:
     - service: scene.turn_on
