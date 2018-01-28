@@ -22,6 +22,9 @@ bedroom:
     name: Makuuhuone
     entities:
         - light.makuuhuone_jalkalamppu
+        - scene.bedroom_full
+        - scene.bedroom_comfy
+        - scene.bedroom_media
 
 automation_settings:
     name: Automaatioasetukset

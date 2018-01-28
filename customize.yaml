@@ -3,3 +3,9 @@ light.makuuhuone:
     
 light.olohuone:
     friendly_name: Valot
+
+light.olohuone_jalkalamppu:
+    friendly_name: Jalkalamppu
+
+light.makuuhuone_jalkalamppu:
+    friendly_name: Jalkalamppu
