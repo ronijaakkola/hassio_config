@@ -31,4 +31,8 @@ automation_settings:
     name: Automaatioasetukset
     entities:
         - input_boolean.light_automation
-    
+
+family:
+    name: Perhe
+    entities:
+        - device_tracker.roniphone_roni
