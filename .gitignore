@@ -49,6 +49,7 @@ known_devices.yaml
 
 .HA_VERSION
 /deps
+/www
 secrets.yaml
 known_devices.yaml
 ip_bans\.yaml
