@@ -4,6 +4,7 @@ default_view:
     entities:
         - group.livingroom
         - group.bedroom
+        - device_tracker.roniphone_roni
         - media_player.romacast_makuuhuone
 
 automation:
