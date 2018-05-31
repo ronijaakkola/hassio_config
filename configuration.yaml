@@ -49,8 +49,11 @@ mqtt:
   password: !secret mqtt_password
 
 device_tracker:
-  - platform: owntracks
-    consider_home: 60
+  - platform: nmap_tracker
+    hosts:
+     - 192.168.0.3
+     - 192.168.0.6
+    home_interval: 10
 
 zone:
   - name: Home

@@ -5,6 +5,7 @@ default_view:
         - group.livingroom
         - group.bedroom
         - device_tracker.roniphone_roni
+        - device_tracker.marlephone_marle
         - media_player.romacast_makuuhuone
 
 automation:
@@ -36,3 +37,4 @@ family:
     name: Perhe
     entities:
         - device_tracker.roniphone_roni
+        - device_tracker.marlephone_marle
