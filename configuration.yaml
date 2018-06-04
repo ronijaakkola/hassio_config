@@ -54,6 +54,7 @@ device_tracker:
      - 192.168.0.3
      - 192.168.0.6
     home_interval: 10
+    scan_options: " --privileged -sP --host-timeout 10s --max-rate 100 "
 
 zone:
   - name: Home
