@@ -1,12 +1,27 @@
 guest_mode:
-  name: Vierastila
+  name: Vieras
   icon: mdi:account-multiple
+  initial: off
+
+away_mode:
+  name: Poissa
+  icon: mdi:home-outline
+  initial: off
+
+alarm_mode:
+  name: Hälytys 
+  icon: mdi:alarm-light
   initial: off
 
 light_automation:
   name: Automaattinen valaistus
   icon: mdi:lightbulb-outline
   initial: on
+
+heat_pump_automation:
+  name: Ilmalämpöpumpun ohjaus
+  icon: mdi:fan
+  initial: off 
 
 light_interior:
   name: Valot sisätilat

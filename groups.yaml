@@ -2,6 +2,7 @@ default_view:
     view: yes
     icon: mdi:home
     entities:
+        - group.heating
         - group.livingroom
         - group.bedroom
         - device_tracker.roniphone_roni
@@ -14,6 +15,11 @@ automation:
     icon: mdi:robot
     entities:
         - group.automation_settings
+        
+heating:
+    name: Lämmitys
+    entities:
+        - input_number.target_temperature
     
 livingroom:
     name: Olohuone
@@ -32,6 +38,7 @@ automation_settings:
     name: Automaatioasetukset
     entities:
         - input_boolean.light_automation
+        - input_boolean.heat_pump_automation
 
 family:
     name: Perhe

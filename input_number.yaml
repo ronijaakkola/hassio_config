@@ -1,0 +1,6 @@
+target_temperature:
+  name: Tavoitelämpötila
+  initial: 20
+  min: 15
+  max: 25
+  step: 1
