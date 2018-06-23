@@ -3,6 +3,8 @@ default_view:
     icon: mdi:home
     entities:
         - group.heating
+        - group.alarm
+        - group.doors
         - group.livingroom
         - group.bedroom
         - device_tracker.roniphone_roni
@@ -17,14 +19,16 @@ automation:
         - group.automation_settings
         
 heating:
-    name: Lämmitys
+    name: Ilmalämpöpumppu
     entities:
         - input_number.target_temperature
     
 livingroom:
     name: Olohuone
     entities:
-        - light.olohuone_jalkalamppu
+        - sensor.temperature_158d0002375005
+        - sensor.humidity_158d0002375005
+        #- light.olohuone_jalkalamppu
         
 bedroom:
     name: Makuuhuone
@@ -39,9 +43,20 @@ automation_settings:
     entities:
         - input_boolean.light_automation
         - input_boolean.heat_pump_automation
+        
+doors:
+    name: Ovet 
+    entities:
+        - binary_sensor.door_window_sensor_158d000205b37c
 
 family:
     name: Perhe
     entities:
         - device_tracker.roniphone_roni
         - device_tracker.marlephone_marle
+        
+alarm:
+    name: Varashälytin
+    icon: mdi:shield
+    entities:
+        - alarm_control_panel.ha_alarm

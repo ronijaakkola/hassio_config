@@ -80,7 +80,8 @@ notify:
 
 group: !include groups.yaml
 automation: !include_dir_merge_list automation
-script: !include_dir_merge_list script
+alarm_control_panel: !include alarm.yaml
+script: !include_dir_merge_named scripts
 input_boolean: !include input_boolean.yaml
 input_select: !include input_select.yaml
 input_number: !include input_number.yaml

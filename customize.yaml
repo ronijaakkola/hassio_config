@@ -1,3 +1,7 @@
+alarm_control_panel.ha_alarm:
+    friendly_name: Koti
+    icon: mdi:shield
+
 light.makuuhuone:
     friendly_name: Valot
     
@@ -9,3 +13,13 @@ light.olohuone_jalkalamppu:
 
 light.makuuhuone_jalkalamppu:
     friendly_name: Jalkalamppu
+    
+sensor.temperature_158d0002375005:
+    friendly_name: Lämpötila
+    
+binary_sensor.door_window_sensor_158d000205b37c:
+    friendly_name: Takaovi
+    icon: mdi:door
+    
+sensor.humidity_158d0002375005:
+    friendly_name: Kosteus

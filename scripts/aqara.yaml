@@ -1,0 +1,42 @@
+play_sound_loop:
+    alias: "Play sound from Aqara in loop"
+    sequence:
+      - service: xiaomi_aqara.play_ringtone
+        data_template:
+          gw_mac: !secret aqara_mac
+          ringtone_id: 0
+          ringtone_vol: 50
+      - delay: 12
+      - service: script.turn_on
+        data:
+          entity_id: script.play_sound_repeat
+
+play_sound_repeat:
+    sequence:
+      - delay: .1
+      - service: script.play_sound_loop
+
+play_sound_single:
+    alias: "Play single sound from Aqara"
+    sequence:
+      - service: xiaomi_aqara.play_ringtone
+        data_template:
+          gw_mac: !secret aqara_mac
+          ringtone_id: 0
+          ringtone_vol: 50
+          
+stop_sound:
+    alias: "Stop all sounds and loops"
+    sequence:
+      - service: xiaomi_aqara.stop_ringtone
+        data_template:
+          gw_mac: !secret aqara_mac
+      - service: script.turn_off
+        data:
+          entity_id: script.play_sound_loop
+      - service: script.turn_off
+        data:
+          entity_id: script.play_sound_repeat
+      - service: script.turn_off
+        data:
+          entity_id: script.play_sound_single
